@@ -7,6 +7,5 @@ class Solution:
         q=head.next
         q.next=head
         head.next=None
-        return ans  
+        return ans
         
-
