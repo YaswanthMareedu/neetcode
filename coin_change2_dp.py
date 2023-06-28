@@ -1,6 +1,5 @@
 class Solution:
     def change(self, amount: int, coins: List[int]) -> int:
-        t = {}
         n = len(coins)
         s = amount
 
@@ -19,7 +18,7 @@ class Solution:
                         t[i][j]=t[i][j-coins[i-1]]+t[i-1][j]
                     else:
                         t[i][j]=t[i-1][j]
-        print(t)
+        #print(t)
         return t[n][amount]
 
 
