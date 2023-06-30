@@ -15,4 +15,4 @@ class Solution:
 
             return t[(n,m)]
         
-        return lcs(s1,s2,len(s1),len(s2),t)
+        #return lcs(s1,s2,len(s1),len(s2),t)
