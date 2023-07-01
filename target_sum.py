@@ -2,10 +2,7 @@ import math
 class Solution:
     def findTargetSumWays(self, nums: List[int], target: int) -> int:
         s = math.ceil((sum(nums)+target)/2)
-
         n = len(nums)
-        #print(s)
-        #t = [[0 for j in range(s+1)] for i in range(len(nums)+1)]
         t= {}
         coins = nums
         s = target
